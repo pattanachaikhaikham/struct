@@ -14,7 +14,7 @@ func (t T) F() {
 	fmt.Println(t.text)
 }
 
-func mail() {
+func main() {
 	var i I
 	i = T{"Hello World"}
 	i.F()
