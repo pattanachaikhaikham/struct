@@ -1,0 +1,21 @@
+package main
+
+import "fmt"
+
+type A interface {
+	F()
+}
+
+type T struct {
+	text string
+}
+
+func (t T) F() {
+	fmt.Println(t.text)
+}
+
+func mail() {
+	var i i
+	i = T{"Hello World"}
+	i.F()
+}
