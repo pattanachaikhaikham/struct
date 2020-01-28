@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 type student struct {
 	name  string
 	age   int
@@ -7,7 +9,7 @@ type student struct {
 }
 
 func main() {
-	var a student
+	var one student
 	one.name = "Goku"
 	one.age = 18
 	one.email = "Goku@super.saiya"
@@ -15,4 +17,11 @@ func main() {
 	two := student{"Gohan", 3, "Gohan@super.saiya"}
 
 	three := student{name: "Videl", email: "Videl@daughter.satan"}
+
+	four := student{age: 20}
+
+	fmt.Println(one)
+	fmt.Println(two)
+	fmt.Println(three)
+	fmt.Println(four)
 }
