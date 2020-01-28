@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-type A interface {
+type I interface {
 	F()
 }
 
@@ -15,7 +15,7 @@ func (t T) F() {
 }
 
 func mail() {
-	var i i
+	var i I
 	i = T{"Hello World"}
 	i.F()
 }
