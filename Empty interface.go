@@ -5,7 +5,7 @@ import "fmt"
 type I interface{}
 
 func desc(i I) {
-	fmt.Println("%v , %T \n", i, i)
+	fmt.Printf("%v , %T \n", i, i)
 }
 func main() {
 	var i I
